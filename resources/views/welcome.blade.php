@@ -79,15 +79,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    InstaBox - <b>{{$nickname}}</b>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="instawrap">
+
+                    @foreach ($instagrams as $insta)
+{{--                        <img class="work-thumbnail" src="{{ $insta->images->standard_resolution->url }}" />--}}
+                        <img class="work-thumbnail" src="{{ $insta->images->thumbnail->url }}" />
+                    @endforeach
                 </div>
             </div>
         </div>

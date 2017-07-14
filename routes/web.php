@@ -16,3 +16,6 @@
 //});
 
 Route::get('/', 'InstaController@getInsta');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
